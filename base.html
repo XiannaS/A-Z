@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site d'amour</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Z&A</a>
+            <ul>
+                <li><a href="#" class="active">Journal</a></li>
+                <li><a href="#lettres">Lettres</a></li>
+                <li><a href="#humeur">Mood</a></li>
+               <li><a href="#bibliotheque">Bibliothèque</a></li>
+                <li><a href="#si">Si...</a></li>
+            </ul>
+  </header>
+
+<section>
+    <img src="stars.png" id="stars">
+<img src="moon.png" id="moon">
+<img src="mountains_behind.png" id="mountains_behind">
+<h2 id="text">Je t'aime ❤️❤️</h2>
+<a href="#sec" id="btn">Explore</a>
+<img src="couple.png" id="mountains_front">
+</section>
+
+<div class="sec" id="sec">
+    <h2>Découverte du site</h2>
+    <p> Mon amour, Je voulais simplement prendre un moment pour te dire que je t'aime. 
+        Sache que tu mérites tout le bonheur du monde et je te chérirais comme un trésor 
+        jusqu'à la fin des temps. 
+        Tu es l'homme le plus doux, le plus gentil et le plus attentionné qui existe. 
+        J'ai une chance folle de t'avoir à mes côtés. <br><br>Mon amour, Je voulais simplement prendre un moment pour te dire que je t'aime. 
+        Sache que tu mérites tout le bonheur du monde et je te chérirais comme un trésor 
+        jusqu'à la fin des temps. 
+        Tu es l'homme le plus doux, le plus gentil et le plus attentionné qui existe. 
+        J'ai une chance folle de t'avoir à mes côtés. <br><br>
+        Mon amour, Je voulais simplement prendre un moment pour te dire que je t'aime. 
+        Sache que tu mérites tout le bonheur du monde et je te chérirais comme un trésor 
+        jusqu'à la fin des temps. 
+        Tu es l'homme le plus doux, le plus gentil et le plus attentionné qui existe. 
+        J'ai une chance folle de t'avoir à mes côtés. <br></p>
+</div>
+
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById ('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header ')
+window.addEventListener('scroll', function(){
+  let value = window.scrollY; // adjust the scrolling speed
+  stars.style.left = value * 0.25 +'px';
+  moon.style.top = value * 1.05 +'px';
+  mountains_behind.style.top = value * 0.5 + 'px';
+  mountains_front.style.top = value * 0 +'px';
+  text.style.marginRight = value * 4 + 'px';
+  text.style.marginTop = value * 1.5 + 'px';
+  btn.style.marginTop = value * 1.5 + 'px';
+  header.style.top = value * 0.5 + 'px';
+})
+</script>
+
+
+
+
+        <!--BIG COMMENTAIRE !!!!-->
+        <!--div id="infos">
+            <div class="infos-content">
+                <div class="humeur">
+                    <div class="barre-humeur" style="width: 85%;"></div>
+                </div>
+                <p>Tickets : 0</p>
+            </div>
+            <img src="avatar.jpg" alt="Avatar" class="avatar">
+        </div> -->
+
+  
+
+    <!--<main>
+        <section id="statistiques">
+            <h2>Statistiques</h2>
+            <div class="stat">
+                <h3>Pourcentage de temps passé ensemble</h3>
+                <div class="pourcentage">
+                    <div class="barre" style="width: 75%;"></div>
+                    <span>75%</span>
+                </div>
+            </div>
+            <div class="stat">
+                <h3>Statistiques de communication</h3>
+                <div class="pourcentage">
+                    <div class="barre" style="width: 80%;"></div>
+                    <span>80%</span>
+                </div>
+            </div>-->
+            <!-- Ajoutez d'autres statistiques ici 
+        </section>
+        <section id="derniere-entree-journal">
+            <Ajoutez ici le contenu de la dernière entrée de journal
+        </section>
+        <section id="creation">
+            <!- Ajoutez ici le bouton de création 
+        </section>
+        <section id="conseil-jour">
+            <!- Ajoutez ici le contenu de la partie conseil du jour 
+        </section>
+        <section id="meteo">
+            <!- Ajoutez ici le contenu de la partie météo 
+        </section>
+        <section id="album-photo">
+            <-- Ajoutez ici le contenu de la partie album photo 
+        </section>
+        <section id="question-jour">
+            <-- Ajoutez ici le contenu de la partie question du jour
+        </section>
+        <section id="image">
+            <img src="image.jpeg" alt="Image romantique">
+        </section>-->
+</body>
+</html>
